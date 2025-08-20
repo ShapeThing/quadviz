@@ -1,9 +1,9 @@
 {
   "name": "@shapething/quadviz",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "exports": {
-    "./default": "./src/components/QuadViz/index.tsx",
+    "./QuadViz": "./src/components/QuadViz/index.tsx",
     "./Triple": "./src/components/Triple/index.tsx",
     "./Term": "./src/components/Term/index.tsx"
   }
