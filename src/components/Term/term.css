@@ -1,0 +1,56 @@
+.term {
+    border-radius: .6rem;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Roboto Variable', sans-serif;
+
+    .iconify {
+        margin-right: .5rem;
+        color: rgba(0, 0, 0, .7);
+    }
+    
+    .language,
+    .prefix {
+        color: rgba(0, 0, 0, .7);
+        font-variation-settings: "wght" 250;
+        margin-right: 2px;
+    }
+
+    &.NamedNode {
+        background-color: #a9e2c7;
+    }
+
+    &.Literal {
+        background-color: #a3bbff;
+    }
+
+    &.BlankNode {
+        background-color: #e2e2e2;
+        font-family: 'Source Code Pro Variable', monospace;
+    }
+
+    .term {
+        padding: 0.3rem 1rem;
+        margin: -0.3rem -.8rem -0.3rem .7rem;
+        border-radius: .4rem;
+    }
+
+    &.subject {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    
+    &.predicate {
+        border-radius: 2px;
+    }
+
+    &.object {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    &.highlight {
+        outline: 4px solid rgb(142, 16, 158);
+    }
+}

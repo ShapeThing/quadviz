@@ -1,0 +1,26 @@
+.quad-viz-level {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .predicate {
+        margin-left: 2rem;
+    }
+
+    .subject + .predicate {
+        margin-left: 0;
+    }
+
+    .standalone-subject {
+        .subject {
+            background-color: rgb(255, 230, 121);
+        }
+    }
+
+}
+
+.has-highlights {
+    .term:not(.highlight) {
+        opacity: .4;
+    }
+}

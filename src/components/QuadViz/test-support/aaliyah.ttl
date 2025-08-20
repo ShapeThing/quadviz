@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix eu: <http://publications.europa.eu/resource/authority/country/> .
+@prefix ex: <https://example.org/> .
+
+ex:aaliyah-littel a schema:Person ;
+  schema:givenName "Aaliyah" ;
+  schema:familyName "Littel" ;
+  sh:shapesGraph <../.shapes/person.ttl> ;
+  schema:gender schema:Female ;
+  schema:image <../Mensen/aaliyah-littel.jpg> ;
+  schema:nationality eu:DZA ;
+  schema:address [
+    schema:streetAddress "Woodside Road" ;
+    schema:postalCode "91296-5293" ;
+    schema:addressLocality "Texas City" ;
+    schema:addressCountry "Ethiopia"
+  ] .
