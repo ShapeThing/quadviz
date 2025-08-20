@@ -1,14 +1,15 @@
 import type { Quad } from "@rdfjs/types";
 import Term from "../Term";
-import './triple.css';
+// import './triple.css';
 import type { JsonLdContextNormalized } from "jsonld-context-parser";
+import type { JSX } from "react/jsx-runtime";
 
 type Props = {
     quad: Quad
     context?: JsonLdContextNormalized
 }
 
-export default function Triple ({ quad, context }: Props) {
+export default function Triple ({ quad, context }: Props): JSX.Element {
     const { subject, predicate, object } = quad;
     return (
         <div className="triple">

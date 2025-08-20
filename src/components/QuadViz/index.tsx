@@ -1,8 +1,8 @@
 import type { Quad, Quad_Subject, Term as TermType } from "@rdfjs/types";
-import "./quad-viz.css";
+// import "./quad-viz.css";
 import type { JsonLdContextNormalized } from "jsonld-context-parser";
 import Term from "../Term";
-import { Fragment } from "react/jsx-runtime";
+import { Fragment, type JSX } from "react/jsx-runtime";
 
 type Props = {
   subject: Quad_Subject;
@@ -91,12 +91,15 @@ function QuadVizLevel({ subject, quads, context, highlights }: LevelProps) {
   );
 }
 
+/**
+ * A component that visualizes RDF quads.
+ */
 export default function QuadViz({
   quads,
   subject,
   context,
   highlights,
-}: Props) {
+}: Props): JSX.Element {
   return (
     <div className={`quad-viz ${highlights ? "has-highlights" : ""}`}>
       <QuadVizLevel

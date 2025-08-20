@@ -1,13 +1,14 @@
-import type { Term } from "@rdfjs/types"
+import type { Term as TermType } from "@rdfjs/types"
 import { Icon } from "@iconify/react";
-import './term.css'
+// import './term.css'
 import { context as fallbackContext, rdf, xsd } from "../../helpers/namespaces";
-import '@fontsource-variable/roboto/index.css';
-import '@fontsource-variable/source-code-pro/index.css';
+// import '@fontsource-variable/roboto/index.css';
+// import '@fontsource-variable/source-code-pro/index.css';
 import type { JsonLdContextNormalized } from "jsonld-context-parser";
+import type { JSX } from "react/jsx-runtime";
 
 type Props = {
-    term: Term
+    term: TermType
     context?: JsonLdContextNormalized
     highlight?: boolean
     type?: 'subject' | 'predicate' | 'object'
@@ -23,7 +24,7 @@ const ignoredDatatypes = [
     rdf('langString'),
 ]
 
-export default function Term ({ term, type, context, highlight }: Props) {
+export default function Term ({ term, type, context, highlight }: Props): JSX.Element {
     const compactedIri = (context ?? fallbackContext).compactIri(term.value, true)
     let label: any = <span className="value">{term.termType === 'Literal' ? `"${term.value}"` : term.value}</span>
 
