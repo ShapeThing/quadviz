@@ -5,7 +5,7 @@ import { context as fallbackContext, rdf, xsd } from "../../helpers/namespaces";
 // import '@fontsource-variable/roboto/index.css';
 // import '@fontsource-variable/source-code-pro/index.css';
 import type { JsonLdContextNormalized } from "jsonld-context-parser";
-import type { JSX } from "react/jsx-runtime";
+import type { JSX } from "react";
 
 type Props = {
     term: TermType

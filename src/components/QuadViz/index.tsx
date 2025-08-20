@@ -2,7 +2,7 @@ import type { Quad, Quad_Subject, Term as TermType } from "@rdfjs/types";
 // import "./quad-viz.css";
 import type { JsonLdContextNormalized } from "jsonld-context-parser";
 import Term from "../Term";
-import { Fragment, type JSX } from "react/jsx-runtime";
+import { Fragment, type JSX } from "react";
 
 type Props = {
   subject: Quad_Subject;

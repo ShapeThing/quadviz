@@ -2,7 +2,7 @@ import type { Quad } from "@rdfjs/types";
 import Term from "../Term";
 // import './triple.css';
 import type { JsonLdContextNormalized } from "jsonld-context-parser";
-import type { JSX } from "react/jsx-runtime";
+import type { JSX } from "react";
 
 type Props = {
     quad: Quad
