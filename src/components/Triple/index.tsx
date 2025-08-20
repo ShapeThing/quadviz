@@ -9,6 +9,9 @@ type Props = {
     context?: JsonLdContextNormalized
 }
 
+/**
+ * A component to display RDF triples (subject, predicate, object).
+ */
 export default function Triple ({ quad, context }: Props): JSX.Element {
     const { subject, predicate, object } = quad;
     return (

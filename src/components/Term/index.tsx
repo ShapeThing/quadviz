@@ -24,6 +24,9 @@ const ignoredDatatypes = [
     rdf('langString'),
 ]
 
+/**
+ * A component to display RDF terms (NamedNode, BlankNode, Literal).
+ */
 export default function Term ({ term, type, context, highlight }: Props): JSX.Element {
     const compactedIri = (context ?? fallbackContext).compactIri(term.value, true)
     let label: any = <span className="value">{term.termType === 'Literal' ? `"${term.value}"` : term.value}</span>
